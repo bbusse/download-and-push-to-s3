@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "file-downloader-uploader"
+version = "0.1.0"
+description = "Download a file from URL and upload to S3"
+authors = ["Björn Busse <bbusse@baerlin.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"  # Adjust based on your Python version requirements
+requests = "^2.31.0"
+boto3 = "^1.34.0"
+
+[tool.poetry.group.dev.dependencies]
+# Add any development dependencies here if needed
+black = "^24.3.0"  # Optional: for code formatting
+flake8 = "^7.0.0"  # Optional: for linting
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+# Optional: Configure Python environment settings
+[tool.poetry.scripts]
+# If you want to add a command-line interface later
+# run = "your_script:main"
+
+# Optional: Configure code formatting
+[tool.black]
+line-length = 88
+target-version = ['py311']
+
+# Optional: Configure flake8
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
