@@ -1,5 +1,3 @@
-```markdown
-
 This is a Python application that downloads a file from a URL and uploads it to an Amazon S3 bucket. The source URL, S3 bucket name, and S3 file path are all configured via environment variables.
 
 ## Prerequisites
@@ -43,7 +41,7 @@ export AWS_SECRET_ACCESS_KEY="your-secret-key"         # AWS secret key
 
 Execute the script:
 ```bash
-poetry run python your_script.py
+poetry run python download-and-push-to-s3.py
 ```
 
 ## Setup With Container
@@ -89,4 +87,3 @@ podman run \
 - For container usage, confirm Podman is running properly
 
 The instructions assume a Unix-like environment, but they can be adapted for Windows by changing the environment variable syntax to use `set` instead of `export`.
-```
