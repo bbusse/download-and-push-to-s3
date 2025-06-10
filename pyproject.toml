@@ -7,7 +7,7 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"  # Adjust based on your Python version requirements
-requests = "^2.31.0"
+requests = "^2.32.4"
 boto3 = "^1.34.0"
 
 [tool.poetry.group.dev.dependencies]
